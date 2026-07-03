@@ -3,7 +3,7 @@ Theme Name: Flatsome Child
 Description: This is a child theme for Flatsome Theme
 Author: UX Themes
 Template: flatsome
-Version: 7.3
+Version: 7.4
 */
 
 /*************** ADD CUSTOM CSS HERE.   ***************/
@@ -118,16 +118,18 @@ Version: 7.3
 .cf-logo {
     align-items: center;
     display: inline-flex;
+    flex: 0 0 auto;
     line-height: 1;
-    max-inline-size: 100%;
+    max-width: min(100%, 156px);
     position: relative;
+    width: clamp(126px, 12vw, 156px);
 }
 
 .cf-logo__image {
-    block-size: auto;
     display: block;
-    inline-size: clamp(126px, 12vw, 156px);
-    max-inline-size: 100%;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
 }
 
 .cf-search-form {
@@ -3848,11 +3850,7 @@ input.cf-collection-filter-toggle[type="checkbox"] {
         justify-self: start;
         line-height: 1;
         max-width: 100%;
-        width: auto;
-    }
-
-    .cf-logo__image {
-        inline-size: clamp(122px, 38vw, 150px);
+        width: clamp(122px, 38vw, 150px);
     }
 
     .cf-search-form {
