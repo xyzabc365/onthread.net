@@ -120,9 +120,9 @@ Version: 7.4
     display: inline-flex;
     flex: 0 0 auto;
     line-height: 1;
-    max-width: min(100%, 156px);
+    max-width: min(100%, 220px);
     position: relative;
-    width: clamp(126px, 12vw, 156px);
+    width: clamp(126px, 12vw, 220px);
 }
 
 .cf-logo__image {
