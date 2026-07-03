@@ -13,6 +13,7 @@ $account_label = is_user_logged_in() ? 'My account' : 'Sign in';
 $cart_url = function_exists('wc_get_cart_url') ? wc_get_cart_url() : onthread_get_page_url('cart');
 $contact_url = onthread_get_page_url('contact');
 $cart_count = onthread_get_cart_count();
+$logo_url = get_stylesheet_directory_uri() . '/assets/images/onthread-logo-04-stitchline.svg';
 ?>
 
 <div class="cf-site-header">
@@ -35,8 +36,9 @@ $cart_count = onthread_get_cart_count();
 					<?php echo get_flatsome_icon('icon-menu'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 				</a>
 
-				<a class="cf-logo" href="<?php echo esc_url(home_url('/')); ?>" aria-label="<?php bloginfo('name'); ?>">
-					onthread
+				<a class="cf-logo" href="<?php echo esc_url(home_url('/')); ?>"
+					aria-label="<?php echo esc_attr(get_bloginfo('name')); ?>">
+					<img class="cf-logo__image" src="<?php echo esc_url($logo_url); ?>" alt="" aria-hidden="true">
 				</a>
 			</div>
 

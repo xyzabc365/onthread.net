@@ -116,28 +116,18 @@ Version: 7.3
 }
 
 .cf-logo {
-    color: #111;
+    align-items: center;
     display: inline-flex;
-    flex-direction: column;
-    font-size: clamp(22px, 2vw, 24px);
-    font-weight: 800;
-    letter-spacing: 0;
     line-height: 1;
+    max-inline-size: 100%;
     position: relative;
-    text-transform: lowercase;
-    white-space: nowrap;
 }
 
-.cf-logo:hover {
-    color: #101010;
-}
-
-.cf-logo strong {
-    color: var(--cf-red);
-    font-size: .55em;
-    font-weight: 900;
-    letter-spacing: .5px;
-    text-transform: uppercase;
+.cf-logo__image {
+    block-size: auto;
+    display: block;
+    inline-size: clamp(126px, 12vw, 156px);
+    max-inline-size: 100%;
 }
 
 .cf-search-form {
@@ -3854,12 +3844,15 @@ input.cf-collection-filter-toggle[type="checkbox"] {
 
     .cf-logo {
         align-items: center;
-        font-size: 24px;
         grid-area: logo;
         justify-self: start;
-        line-height: 1.25;
+        line-height: 1;
         max-width: 100%;
         width: auto;
+    }
+
+    .cf-logo__image {
+        inline-size: clamp(122px, 38vw, 150px);
     }
 
     .cf-search-form {
@@ -4383,10 +4376,6 @@ input.cf-collection-filter-toggle[type="checkbox"] {
     .cf-action,
     .cf-cart {
         min-height: 30px;
-    }
-
-    .cf-logo {
-        font-size: 24px;
     }
 
     .cf-mobile-sidebar-login {

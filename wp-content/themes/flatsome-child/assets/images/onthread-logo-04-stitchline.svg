@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">OnThread logo concept 04</title>
+  <desc id="desc">Minimal OnThread wordmark with stitch-line mark.</desc>
+  <rect width="1200" height="320" fill="none"/>
+  <g transform="translate(82 75)">
+    <circle cx="82" cy="82" r="64" fill="#111111"/>
+    <circle cx="82" cy="82" r="34" fill="#ffffff"/>
+    <path d="M31 134 133 30" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+    <path d="M139 147c41 33 98 33 139 0" fill="none" stroke="#2f6fdd" stroke-width="16" stroke-linecap="round" stroke-dasharray="1 32"/>
+  </g>
+  <text x="340" y="198" fill="#111111" font-family="Arial, sans-serif" font-size="136" font-weight="720">onthread</text>
+  <path d="M344 229h420" stroke="#2f6fdd" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 26"/>
+</svg>
