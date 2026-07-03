@@ -874,7 +874,7 @@ Version: 7.4
 
 .cf-product-item__media {
     align-items: flex-start;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 1 / 1;
     background: #fff;
     border-radius: 0;
     display: flex;
